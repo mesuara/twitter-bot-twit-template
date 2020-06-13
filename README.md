@@ -3,8 +3,8 @@
 
  ## Installing
 
- *[Install the template](https://github.com/git/git/blob/master/README#L19)
- *[Get Twitter tokens]()
+ * [Install the template](https://github.com/git/git/blob/master/README#L19)
+ * [Get Twitter tokens]()
 
 - Open terminal, navigate to the folder you want to have this projects saved. Run the command below:
  ```shell
