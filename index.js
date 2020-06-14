@@ -19,11 +19,14 @@ let T = new Twit({
 
 
 /*****************************************************************************************************************************************************************************************************************************************************************************************************
- * BELOW ARE THE FUNCTIONS(line 26-41) USED FROM TWIT TO SEARCH FOR TWEETS WITH A CERTAIN WORD AND THEN RETWEET THOSE TWEETS. CHANGE THE QUERY AT `Q` FOR THE WORD AND ALSO THE DATE IF YOU'D LIKE TO GET THE LATEST ONE. YOU CAN ASLO CHANGE THE `COUNT` TO HOW MANY TWEETS AND REETWEETS YOU WOULD LIKE TO DO. *
+ * BELOW ARE THE FUNCTIONS(line 29-44) USED FROM TWIT TO SEARCH FOR TWEETS WITH A CERTAIN WORD AND THEN RETWEET THOSE TWEETS. CHANGE THE VARIABLE AT `WORD` FOR THE WORD AND ALSO THE DATE IF YOU'D LIKE TO GET THE LATEST ONE. YOU CAN ASLO CHANGE THE `COUNT` TO HOW MANY TWEETS AND REETWEETS YOU WOULD LIKE TO DO. *
  *****************************************************************************************************************************************************************************************************************************************************************************************************/
 
+ let word = 'web development'
+ let count = 10
+ let date = '2020-06-11'
 
-// T.get('search/tweets', { q: 'web development since:2020-06-11', count: 10 })
+// T.get('search/tweets', { q: `${word} since:${date}`, count: count })
 //   .catch(function (err) {
 //     console.log('caught error', err.stack)
 //   })

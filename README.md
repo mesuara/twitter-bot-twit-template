@@ -1,5 +1,5 @@
 # twitter-bot-twit-template
- This is a template created using [Twit](https://github.com/ttezel/twit). It searches for tweets based on the word passed and then retweets those tweets.
+ This is a template created using [Twit](https://github.com/ttezel/twit). Searches for tweets based on the word passed and then retweets those tweets. I made it for personal use. If it looks like something you'd like to try it out feel free to follow the steps below and use the template to have your own bot.
 
  ## Installing
 
@@ -35,7 +35,7 @@ node -v
 npm i
 ```
 - On the `index.js` file paste in the saved tokens and keys from twitter. That's how you give Twitter and Twit access to your account. All the API calls to Twitter are made through Twit library.Check out [Twit](https://github.com/ttezel/twit) to see how it works.
-```shell
+```javascript
 let T = new Twit({
     consumer_key: 'your API key goes here',
     consumer_secret: 'your API secret key goes here',
@@ -45,7 +45,7 @@ let T = new Twit({
 ```
 - The code lines 16-18  on `index.js` it's just to post a tweet so you test if your bot is working. 
     - By default the tweet will just say "Hello World" if you would like to change it just change `status` string
-```shell
+```javascript
  T.post('statuses/update', { status: 'change this string to what you would like to tweet instead' }, function(err, data, response) {
      console.log(data)
   })
@@ -55,4 +55,37 @@ let T = new Twit({
 ```shell
 node index.js
 ```
--
+- Check your twitter to see the the new tweet. 
+    - Comment the lines 16-18
+- Time to retweet some tweets. Uncomment the lines 29-44 on `index.js` and modify them to your needs. Change the 3 variable `word` to search for, the `date` since when to search and the `count` how many tweets you'd like to search for and retweet
+```javascript
+ let word = 'your word goes here'
+ let count = 10 //number of tweets you'd like to retweet
+ let date = '2020-06-11' //date using this format just change the numbers
+
+T.get('search/tweets', { q: `${word} since:${date}`, count: count })
+  .catch(function (err) {
+    console.log('caught error', err.stack)
+  })
+  .then(function (result) {
+
+
+    console.log('data', result.data);
+    result.data.statuses.map(x => {
+                
+                T.post('statuses/retweet/:id', { id: x.id_str}, function (err, data, response) {
+                    console.log(data)
+                  })
+            })
+           
+  })
+
+```
+- Save the file and run on the terminal:
+```shell
+node index.js
+```
+#### Congrats you did it! 
+
+
+
