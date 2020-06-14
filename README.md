@@ -11,14 +11,14 @@
 * You will need a [twitter developer account](https://developer.twitter.com/en/apps) to create an App so you can get the tokens and keys. 
 * Once you get approved go to [link](https://developer.twitter.com/en/apps), click on the create an app
 ![create an app](./images/createanapp.png)
+* Fill in the fields. For the `Website URL` you can just put `https://www.example.com`.
+* Click on the app that was created and navigato to Keys and Tokens.
+![keys and tokens](./images/keysandtokens.png)
+* If the isn't a Access token & access token secret generate one and save the information in a file/note.
 
+### Next:
 
-
-
-
-
-
-- Open terminal, navigate to the folder you want to have this projects saved. Run the command below:
+- Open terminal, navigate to the folder you want to have the projects saved. Run the command below:
  ```shell
     git clone https://github.com/mesuara/twitter-bot-twit-template
  ```
