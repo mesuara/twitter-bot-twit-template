@@ -3,8 +3,9 @@
 
  ## Installing
 
- * [Install the template](https://github.com/git/git/blob/master/README#L19)
- * [Get Twitter tokens]()
+ * [Get Twitter tokens](https://github.com/git/git/blob/master/README#L1)
+ * [Install the template](https://github.com/git/git/blob/master/README#L20)
+
 
 ## Get Twitter Tokens
 
@@ -12,9 +13,9 @@
 * Once you get approved go to [link](https://developer.twitter.com/en/apps), click on the create an app
 ![create an app](./images/createanapp.png)
 * Fill in the fields. For the `Website URL` you can just put `https://www.example.com`.
-* Click on the app that was created and navigato to Keys and Tokens.
+* Click on the app that was created and navigate to Keys and Tokens.
 ![keys and tokens](./images/keysandtokens.png)
-* If the isn't a Access token & access token secret generate one and save the information in a file/note.
+* If there isn't a Access token & access token secret generate one and save the information in a file/note.
 
 ### Next:
 
