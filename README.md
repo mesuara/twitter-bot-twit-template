@@ -30,7 +30,11 @@
 ```shell
 node -v
 ```
-- On the `index.js` file paste in the saved tokens and keys from twitter.
+- Make sure you're in the that folder on the Terminal and run:
+```shell
+npm i
+```
+- On the `index.js` file paste in the saved tokens and keys from twitter. That's how you give Twitter and Twit access to your account. All the API calls to Twitter are made through Twit library.Check out [Twit](https://github.com/ttezel/twit) to see how it works.
 ```shell
 let T = new Twit({
     consumer_key: 'your API key goes here',
@@ -39,4 +43,16 @@ let T = new Twit({
     access_token_secret:'your access token secret goes here' ,
 })
 ```
+- The code lines 16-18  on `index.js` it's just to post a tweet so you test if your bot is working. 
+    - By default the tweet will just say "Hello World" if you would like to change it just change `status` string
+```shell
+ T.post('statuses/update', { status: 'change this string to what you would like to tweet instead' }, function(err, data, response) {
+     console.log(data)
+  })
+```
 
+- Uncomment the lines 16-18 save and run on the terminal:
+```shell
+node index.js
+```
+-
