@@ -19,11 +19,24 @@
 
 ### Next:
 
-- Open terminal, navigate to the folder you want to have the projects saved. Run the command below:
+- Fork this repo
+![Fork](./images/fork.png)
+- Open terminal, navigate to the folder you want to have the project saved. Run the command below:
  ```shell
     git clone https://github.com/mesuara/twitter-bot-twit-template
  ```
-- Once that is finished open that folder in a code editor. 
--
-
+- Open the folder in a code editor. 
+- Make sure you have node. If you're not sure run the command below to check. You can download node [here](https://nodejs.org/en/download/) if you don't have it. You will need it to run the bot file
+```shell
+node -v
+```
+- On the `index.js` file paste in the saved tokens and keys from twitter.
+```shell
+let T = new Twit({
+    consumer_key: 'your API key goes here',
+    consumer_secret: 'your API secret key goes here',
+    access_token: 'your access token goes here',
+    access_token_secret:'your access token secret goes here' ,
+})
+```
 
