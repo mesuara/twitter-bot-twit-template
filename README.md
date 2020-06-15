@@ -1,10 +1,12 @@
 # twitter-bot-twit-template
  This is a template created using [Twit](https://github.com/ttezel/twit). Searches for tweets based on the word passed and then retweets those tweets. I made it for personal use. If it looks like something you'd like to try it out feel free to follow the steps below and use the template to have your own bot.
 
+---
+
  ## Installing
 
- * [Get Twitter tokens]()
- * [Install the template]()
+ * [Get Twitter tokens](#get-twitter-tokens)
+ * [Install the template](#next)
 
 
 ## Get Twitter Tokens
