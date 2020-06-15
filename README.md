@@ -3,8 +3,8 @@
 
  ## Installing
 
- * [Get Twitter tokens](https://github.com/git/git/blob/master/README#L1)
- * [Install the template](https://github.com/git/git/blob/master/README#L20)
+ * [Get Twitter tokens]()
+ * [Install the template]()
 
 
 ## Get Twitter Tokens
